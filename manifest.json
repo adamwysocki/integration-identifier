@@ -1,0 +1,13 @@
+{
+    "name": "Leafly Integration Identifier",
+    "version": "1.0",
+    "description": "Be Safe, know when you're on production vs. integration",
+    "manifest_version": 2,
+    "content_scripts": [{
+        "matches": ["*://*.leafly.io/*"],
+        "js": ["jquery-3.4.1.min.js", "script.js"]
+    } ],
+    "web_accessible_resources": [
+        "leafly-icon.png"
+      ]
+}
